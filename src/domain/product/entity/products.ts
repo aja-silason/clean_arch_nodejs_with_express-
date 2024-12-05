@@ -11,7 +11,7 @@ export class Product {
 
     public static create(name: string, price: number){
         return new Product({
-            id: crypto.randomUUID.toString(),
+            id: crypto.randomUUID().toString(),
             name,
             price,
             quandity: 0
